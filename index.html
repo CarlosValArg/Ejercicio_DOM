@@ -7,19 +7,22 @@
 </head>
 <body>
     <main class="container">
+      <div class="alert alert-warning" role="alert" id="alertValidaciones" style="display:none;">
+      </div>
         <form class="row g-3">
             <div class="col-auto">
-              <label for="staticEmail2" class="visually-hidden">Email</label>
-              <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+              <label for="static" class="visually-hidden">Nombre</label>
+              <input type="text" readonly class="form-control-plaintext" id="static" value="Nombre">
             </div>
             <div class="col-auto">
-              <label for="inputPassword2" class="visually-hidden">Password</label>
-              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              <label for="txtNombre" class="visually-hidden">Nombre</label>
+              <input type="text" class="form-control" id="txtNombre" autofocus>
             </div>
             <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+              <button type="submit" class="btn btn-primary mb-3" id="btnGuardar">Guardar</button>
             </div>
           </form>
+          <a class="btn btn-primary" href="./welcome.html" role="button" aria-disabled="true">WELCOME</a>
     </main>
 
       <script src="./index.js"></script>
